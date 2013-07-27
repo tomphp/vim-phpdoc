@@ -234,7 +234,7 @@ func! PhpDocFunc()
         if l:paramtype != ""
             let l:paramtype = " " . l:paramtype
         endif
-        exe l:txtBOL . g:pdv_cfg_Commentn . "@param" . l:paramtype . " $" . l:paramname . " " . l:paramname . " ". g:pdv_cfg_EOL
+        exe l:txtBOL . g:pdv_cfg_Commentn . "@param " . l:paramtype . " $" . l:paramname . g:pdv_cfg_EOL
     endwhile
 
     if l:static != ""
